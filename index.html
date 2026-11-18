@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QAHRAMONNI KIYINTIR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">👗 QAHRAMONNI KIYINTIR</div>
+    <p>O‘z uslubingni yarat va qahramoningni bezat!</p>
+  </header>
+
+  <main class="container">
+    <section class="game-area">
+      <div class="top-info">
+        <div class="info-box">🏆 Ball: <span id="score">0</span></div>
+        <div class="info-box">⭐ Rekord: <span id="record">0</span></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <div class="stage-title">✨ FASHION STUDIO ✨</div>
+        <canvas id="avatarCanvas" width="600" height="760">
+          Qahramon tasviri
+        </canvas>
+        <div class="stage-bottom">YOUR FASHION WORLD</div>
+      </div>
+
+      <div class="action-buttons">
+        <button id="randomBtn">🎲 Tasodifiy obraz</button>
+        <button id="resetBtn">🔄 Qayta boshlash</button>
+        <button id="downloadBtn">📸 PNG yuklab olish</button>
+      </div>
+    </section>
+
+    <section class="wardrobe">
+      <h2>🎨 Kiyimlar shkafi</h2>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="clothes">👕 Kiyim</button>
+        <button class="tab" data-tab="shoes">👟 Oyoq kiyim</button>
+        <button class="tab" data-tab="hair">💇 Soch</button>
+        <button class="tab" data-tab="hat">👑 Bosh kiyim</button>
+        <button class="tab" data-tab="accessories">🕶️ Aksessuar</button>
+      </div>
+
+      <div id="items" class="items"></div>
+
+      <h3>🎨 Rangni tanlang</h3>
+      <div class="color-list">
+        <button class="color" data-color="#ef476f" style="--c:#ef476f" aria-label="Pushti"></button>
+        <button class="color" data-color="#4361ee" style="--c:#4361ee" aria-label="Ko‘k"></button>
+        <button class="color" data-color="#06a77d" style="--c:#06a77d" aria-label="Yashil"></button>
+        <button class="color" data-color="#9b5de5" style="--c:#9b5de5" aria-label="Binafsha"></button>
+        <button class="color" data-color="#f4a261" style="--c:#f4a261" aria-label="To‘q sariq"></button>
+        <button class="color" data-color="#22223b" style="--c:#22223b" aria-label="To‘q rang"></button>
+        <button class="color" data-color="#f8f9fa" style="--c:#f8f9fa" aria-label="Oq"></button>
+        <button class="color" data-color="#e9c46a" style="--c:#e9c46a" aria-label="Oltin"></button>
+      </div>
+
+      <h3>🌈 Fon tanlash</h3>
+      <div class="background-list">
+        <button data-bg="pink">🌸 Pushti</button>
+        <button data-bg="blue">🌊 Moviy</button>
+        <button data-bg="purple">💜 Binafsha</button>
+        <button data-bg="green">🌿 Yashil</button>
+        <button data-bg="night">🌙 Tungi</button>
+      </div>
+
+      <div class="result-message" id="message">
+        Obraz yaratishni boshlang! ✨
+      </div>
+    </section>
+  </main>
+
+  <footer>✨ QAHRAMONNI KIYINTIR | Ulug'bek.R ✨</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
